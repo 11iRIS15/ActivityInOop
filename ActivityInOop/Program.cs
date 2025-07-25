@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!,iloyouyou");
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter your age in years: "); //asked user to input their age
+        int age = int.Parse(Console.ReadLine());
+
+        if (age >= 1 && age <= 120) //check if the age is between 1 and 120
+        {
+            Console.WriteLine($"You are {age * 12} months old."); //if it is between 1 and 120 the age multiplied by 12
+        }
+        else
+        {
+            Console.WriteLine("Invalid age. Age must be between 1 and 120."); //display when the age is out of range
+        }
+    }
+}
